@@ -17,4 +17,5 @@ def help():
                    | |                              
                    |_|                              
     -t <text> - used to find <text> by generating infinitely random string
+    -a <width> <height> <numberOfArts> - generates <numberOfArts> arts with <width> width and <height> height
     """)
