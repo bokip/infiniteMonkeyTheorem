@@ -2,6 +2,7 @@ import time
 from sys import stdout
 from random import randint, choice
 from outputMessages import *
+
 characters = "abcdefghijklmnopqrstuvwxyz "
 charactersNoSpace = "abcdefghijklmnopqrstuvwxyz"
 
@@ -10,7 +11,7 @@ def testString(stringToTest):
         error("String for monkey to find can't be empty")
     for i in stringToTest:
         if i not in characters:
-            error("Invalid character found, allowed characters are \"abcdefghijklmnopqrstuvwxyz \"")
+            error("Invalid character found, allowed characters are \"abcdefghijklmnopqrstuvwxyz\" and space")
 def monkeyText(stringToFind):
     start = time.time()
     solved = False
@@ -44,17 +45,6 @@ def monkeyText(stringToFind):
                 end = time.time()
                 ok(f"found your string({stringToFind}) after {millionsNeededToFind} millions of characters in {end - start} seconds!")
                 solved = True
-    print("""     
-           ."`".
-       .-./ _=_ \.-.
-      {  (,(oYo),) }}
-      {{ |   "   |} }
-      { { \(---)/  }}
-      {{  }'-=-'{ } }
-      { { }._:_.{  }}
-      {{  } -:- { } }
-      {_{ }`===`{  _}
-     ((((\)     (/))))""")
     print("""
                         .=\"=.
                       _/.-.-.\_     _
@@ -68,4 +58,6 @@ def monkeyText(stringToFind):
      |o=======.|      /   /    \  /
      `\"\"\"\"\"\"\"\"\"`  ,--`,--'\/\    /
                    '-- \"--'  '--'
-     """)
+    ASCII picture of monkey with typewriter from asciiart.eu
+    """)
+
