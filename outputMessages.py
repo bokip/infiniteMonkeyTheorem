@@ -16,6 +16,5 @@ def help():
      |_|  |_|\___|_| .__/  |_|  |_|\___|_| |_|\__,_|
                    | |                              
                    |_|                              
-    -t <text> - used to find <text> in millions of randomly generated text.
-    Note: this is in beta, i coded this while i was bored waiting new year
-        """)
+    -t <text> - used to find <text> by generating infinitely random string
+    """)
