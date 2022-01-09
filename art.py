@@ -1,10 +1,7 @@
-import time
 from random import randint
 from outputMessages import *
 
 def monkeyArt(width, height, numberOfArts):
-    start = time.time()
-    solved = False
     artsGenerated = 0
     for i in range(numberOfArts):
         artsGenerated += 1
