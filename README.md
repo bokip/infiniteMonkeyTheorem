@@ -20,6 +20,11 @@ And to generate some random pixel art:
 ```bash
 python main.py -a <width> <height> <number>
 ```
+For more info run:
+```bash
+python main.py --help
+```
+
 ## License
 
 [GPLv2](https://choosealicense.com/licenses/gpl-2.0/)
