@@ -1,6 +1,6 @@
 import sys
 from outputMessages import *
-from art import monkeyBlackWhite, monkeyArt
+from art import monkeyBlackWhite, monkeyArt, monkeyA
 from text import monkeyText
 
 try:
@@ -12,6 +12,8 @@ try:
     elif sys.argv[1] == "-a":
         if sys.argv[5] == "-bw":
             monkeyBlackWhite(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+        elif sys.argv[5] == "-ab":
+            monkeyA(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
         else:
              monkeyArt(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
     else:
