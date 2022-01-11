@@ -45,7 +45,7 @@ def monkeyBlackWhite(width, height, numberOfArts):
                     else:
                         art.write("0 ")
                         art.write("0 ")
-                        art.write("   ")
+                        art.write("0   ")
             ok(f"Successfully generate art number {artsGenerated}!")
     ok(f"{numberOfArts} generated successfully")
 
