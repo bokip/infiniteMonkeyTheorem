@@ -28,7 +28,9 @@ python main.py --help
 ## Converting PPMs to PNGs
 
 To convert PPMs to PNGs or any other image format, install magick run:
+```bash
 magick example.ppm examle.png
+```
 If you don't want to do that, you might go to sites like cloudconvert.com.
 
 
