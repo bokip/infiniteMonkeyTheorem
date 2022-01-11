@@ -17,5 +17,9 @@ def help():
                    | |                              
                    |_|                              
     -t <text> - used to find <text> by generating infinitely random string
-    -a <width> <height> <numberOfArts> - generates <numberOfArts> arts with <width> width and <height> height
+    -a <width> <height> <numberOfArts> <options> - generates <numberOfArts> arts with <width> width and <height> height
+    
+    Options for Monkey's art:
+    -bw - black & white
+    -ab - not so bad looking mix of black, white, red, blue and green
     """)
