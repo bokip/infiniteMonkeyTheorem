@@ -25,6 +25,11 @@ For more info run:
 python main.py --help
 ```
 
+## Converting PPMs to PNGs
+
+To convert PPMs to PNGs or any other image format, install magick run:
+magick example.ppm examle.png
+
 ## License
 
 [GPLv2](https://choosealicense.com/licenses/gpl-2.0/)
