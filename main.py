@@ -10,11 +10,12 @@ try:
     elif sys.argv[1] == "--help" or sys.argv[1] == "-help" or sys.argv[1] == "-h":
         help()
     elif sys.argv[1] == "-a":
-        if sys.argv[5] == "-bw":
-            monkeyBlackWhite(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
-        elif sys.argv[5] == "-ab":
-            monkeyA(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
-        else:
+        try:
+            if sys.argv[5] == "-bw":
+                monkeyBlackWhite(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+            elif sys.argv[5] == "-ab":
+                monkeyA(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+        except IndexError:
              monkeyArt(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
     else:
         error("Arguments aren't good, check help menu with --help")
