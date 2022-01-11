@@ -1,7 +1,7 @@
 import sys
 from outputMessages import *
+from art import monkeyBlackWhite, monkeyArt
 from text import monkeyText
-from art import monkeyArt
 
 try:
     if sys.argv[1] == "-t":
@@ -10,7 +10,10 @@ try:
     elif sys.argv[1] == "--help" or sys.argv[1] == "-help" or sys.argv[1] == "-h":
         help()
     elif sys.argv[1] == "-a":
-        monkeyArt(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+        if sys.argv[5] == "-bw":
+            monkeyBlackWhite(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+        else:
+             monkeyArt(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
     else:
         error("Arguments aren't good, check help menu with --help")
 except IndexError:
