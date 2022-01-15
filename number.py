@@ -6,6 +6,8 @@ def monkeyNum(numberToFind, minimalNumber, greatestNumber):
     numberIsFound = False
     count = 0
     start = time.time()
+    if numberToFind < minimalNumber:
+        error("<numberToFind> can't be smaller than <minimalNumber>")
     while not numberIsFound:
         if randint(minimalNumber, greatestNumber) != numberToFind:
             count += 1
