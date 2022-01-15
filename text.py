@@ -1,5 +1,4 @@
 import time
-from sys import stdout
 from random import randint, choice
 from outputMessages import *
 
