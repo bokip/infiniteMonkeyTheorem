@@ -2,6 +2,7 @@ import sys
 from outputMessages import *
 from art import monkeyBlackWhite, monkeyArt, monkeyA
 from text import monkeyText
+from number import monkeyNum
 
 try:
     if sys.argv[1] == "-t":
@@ -17,6 +18,8 @@ try:
                 monkeyA(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
         except IndexError:
              monkeyArt(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+    elif sys.argv[1] == "-n":
+        monkeyNum(sys.argv[2], sys.argv[3], sys.argv[4])
     else:
         error("Arguments aren't good, check help menu with --help")
 except IndexError:
