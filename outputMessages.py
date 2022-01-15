@@ -18,7 +18,7 @@ def help():
                    |_|                              
     -t <text> - used to find <text> by generating infinitely random string
     -a <width> <height> <numberOfArts> <options> - generates <numberOfArts> arts with <width> width and <height> height
-    
+    -n <numberToFind> <minimalNumber> <greatestNumber> - finds <numberToFind> by generating pseudorandom numbers in range of <minimalNumber> to <greatestNumber>   
     Options for Monkey's art:
     -bw - black & white
     -ab - not so bad looking mix of black, white, red, blue and green
