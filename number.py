@@ -11,5 +11,5 @@ def monkeyNum(numberToFind, minimalNumber, greatestNumber):
             count += 1
         else:
             end = time.time()
-            outputMessage.ok(f"Found number {numberToFind} after generating {count} pseudorandom numbers in range beetween {minimalNumber} and {greatestNumber} for {end-start} seconds.")
-
+            outputMessages.ok(f"Found number {numberToFind} after generating {count} pseudorandom numbers in range beetween {minimalNumber} and {greatestNumber} for {end-start} seconds")
+            numberIsFound = True
